@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>أرشيف كلية الحاسب</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://cisarchive.site/CSS/p.css">
+    <link rel="stylesheet" href="http://192.168.8.8:5500/CSS/p.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="https://cisarchive.site/Images/cis.ico">
+    
+
+  </head>
+<body>
+
+  <div>
+    <!--Start of Header content-->
+    <!-- Bar (Sidebar - hidden on small screens) -->
+    <div class="sidebar1 bar-block brdr-r animate-right" id="mySidebar">
+      <button  onclick="close1()" class="btn3 bar-item size-l cr-h tstr" >&times; إغلاق </button>
+      <a href="https://cisarchive.site" class="bar-item btn3  cb-h"><i class="fa fa-home"></i></a> 
+      <button class="btn3 block tstc cb-h" onclick=" AccF('Acc1')"> التخصصات <i class="fa fa-caret-down"></i></button>
+      <div id="Acc1"  class="hide  cb animate-opacity">
+        <a href="https://cisarchive.site/CIS/CE/" class="bar-item tstr btn3-1">هندسة الحاسب</a>
+        <a href="https://cisarchive.site/CIS/CS/" class="bar-item tstr btn3-2">علوم الحاسب</a>
+        <a href="https://cisarchive.site/CIS/IS/" class="bar-item tstr btn3-3">نظم المعلومات</a>
+      </div>
+      <a href="https://cisarchive.site/Library/" class="bar-item btn3 cb-h">المكتبة</a>
+      <a href="https://cisarchive.site/CalcGPA/" class="bar-item btn3 cb-h">حساب المعدل التراكمي</a>
+    </div>
+    
+    <!-- Start Page Content (only on med and large scr)-->
+    <div class="top cb">
+    <div class="overlay" onclick="close1()"style="cursor:pointer" id="myOverlay"></div>
+      <button class="btn3 size-xl hide-small f-right" onclick="open1()">☰</button>
+       <div class="container">
+      <h1 class="hide-small tstc">أرشيف كلية الحاسب ونظم المعلومات</h1></div>
+    </div>
+    
+    
+    <!-- Bar on small screens (Hidden on med and lar scr) -->
+    <div class="sidebar1 bar-block brdr-r animate-right size-l" style="width:100%;" id="mySidebar2">
+      <button onclick="close2()" class="btn3 bar-item size-l cr-h tstr" >إغلاق &times;</button>
+       <a href="https://cisarchive.site" class="bar-item btn3  cb-h"><i class="fa fa-home"></i></a> 
+      <button class="btn3 block tstc cb-h" onclick=" AccF('Acc2')"> التخصصات <i class="fa fa-caret-down"></i></button>
+      <div id="Acc2"  class="hide cb animate-opacity">
+        <a href="https://cisarchive.site/CIS/CE/" class="bar-item tstr btn3-1">هندسة الحاسب</a>
+        <a href="https://cisarchive.site/CIS/CS/" class="bar-item tstr btn3-2">علوم الحاسب</a>
+        <a href="https://cisarchive.site/CIS/IS/" class="bar-item tstr btn3-3">نظم المعلومات</a>
+      </div>
+      <a href="https://cisarchive.site/Library/" class="bar-item btn3 cb-h">المكتبة</a>
+      <a href="https://cisarchive.site/CalcGPA/" class="bar-item btn3 cb-h">حساب المعدل التراكمي</a>
+    </div>
+    
+    
+    <div class="top cb">
+      <div class="overlay" onclick="close2()"style="cursor:pointer" id="myOverlay2"></div>
+      <button class="btn3  size-xl hide-large hide-medium f-right " onclick="open2()">☰</button>
+    </div>
+    <!--End of Header content-->  
+    
+  </div>
+
+
+<!-- Page Content -->
+<div class="padding-L" id="main">
+
+
+  <!-- main Section -->
+<div class="tstm padding-64">
+
+  <div class="tstm2">
+    <h1 class="ml4 tstc">
+      <span class="letters letters-1">Welcome</span>
+      <span class="letters letters-2">To</span>
+      <span style="direction: ltr;" class="letters letters-3">Computer College Archieve!</span>
+      <span class="letters letters-4">أهلا بكم</span>
+      <span class="letters letters-5">في</span>
+      <span class="letters letters-6">أرشيف كلية الحاسب!</span>
+    </h1>
+  </div>
+
+</div>
+
+<div class="amargin-lr padding-64" id="head">
+  <div class="tstm4 ">
+    <div class="card tstm3 ">
+      <div class="tstm2 ">
+        <h2 class="tstc">بسم الله</h2>
+        <p>ستجد ما يفيدك إن شاء الله </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tstm4">
+  <div class="card" >
+
+    <h2 class=" tstc">التخصصات</h2>
+    <div class="row tstc">
+      <div class="card column" >
+        <h2>هندسة الحاسب</h2>
+        <button onclick="document.location='https://cisarchive.site/CIS/CE/'" class="btn4-1">دخول</button>
+      </div>
+
+      <div class="card column" >
+        <h2>علوم الحاسب</h2>
+        <button onclick="document.location='https://cisarchive.site/CIS/CS/'" class="btn4-2">دخول</button>
+      </div>
+
+      <div class="card column">
+        <h2>نظم المعلومات</h2>
+        <button onclick="document.location='https://cisarchive.site/CIS/IS/'" class="btn4-3">دخول</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+ <!-- JS Codes -->
+
+ <script src="https://cisarchive.site/JS/pack.js" ></script>
+
+</body>
+</html>

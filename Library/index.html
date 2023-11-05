@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>أرشيف كلية الحاسب</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cisarchive.site/CSS/p.css">
+    <link rel="stylesheet" href="http://192.168.8.8:5500/CSS/p.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+   
+    <link rel="icon" type="image/x-icon" href="https://cisarchive.site/Images/cis.ico">
+
+    <style>
+      </style>
+  </head>
+
+<body>
+  <div>
+    <!--Start of Header content-->
+    <!-- Bar (Sidebar - hidden on small screens) -->
+    <div class="sidebar1 bar-block brdr-r animate-right" id="mySidebar">
+      <button  onclick="close1()" class="btn3 bar-item size-l cr-h tstr" >&times; إغلاق </button>
+      <a href="https://cisarchive.site" class="bar-item btn3  cb-h"><i class="fa fa-home"></i></a> 
+      <button class="btn3 block tstc cb-h" onclick=" AccF('Acc1')"> التخصصات <i class="fa fa-caret-down"></i></button>
+      <div id="Acc1"  class="hide  cb animate-opacity">
+        <a href="https://cisarchive.site/CIS/CE/" class="bar-item tstr btn3-1">هندسة الحاسب</a>
+        <a href="https://cisarchive.site/CIS/CS/" class="bar-item tstr btn3-2">علوم الحاسب</a>
+        <a href="https://cisarchive.site/CIS/IS/" class="bar-item tstr btn3-3">نظم المعلومات</a>
+      </div>
+      <a href="https://cisarchive.site/Library/" class="bar-item btn3 cb-h">المكتبة</a>
+      <a href="https://cisarchive.site/CalcGPA/" class="bar-item btn3 cb-h">حساب المعدل التراكمي</a>
+    </div>
+    
+    <!-- Start Page Content (only on med and large scr)-->
+    <div class="top cb">
+    <div class="overlay" onclick="close1()"style="cursor:pointer" id="myOverlay"></div>
+      <button class="btn3 size-xl hide-small f-right" onclick="open1()">☰</button>
+       <div class="container">
+      <h1 class="hide-small tstc">أرشيف كلية الحاسب ونظم المعلومات</h1></div>
+    </div>
+    
+    
+    <!-- Bar on small screens (Hidden on med and lar scr) -->
+    <div class="sidebar1 bar-block brdr-r animate-right size-l" style="width:100%;" id="mySidebar2">
+      <button onclick="close2()" class="btn3 bar-item size-l cr-h tstr" >إغلاق &times;</button>
+       <a href="https://cisarchive.site" class="bar-item btn3  cb-h"><i class="fa fa-home"></i></a> 
+      <button class="btn3 block tstc cb-h" onclick=" AccF('Acc2')"> التخصصات <i class="fa fa-caret-down"></i></button>
+      <div id="Acc2"  class="hide cb animate-opacity">
+        <a href="https://cisarchive.site/CIS/CE/" class="bar-item tstr btn3-1">هندسة الحاسب</a>
+        <a href="https://cisarchive.site/CIS/CS/" class="bar-item tstr btn3-2">علوم الحاسب</a>
+        <a href="https://cisarchive.site/CIS/IS/" class="bar-item tstr btn3-3">نظم المعلومات</a>
+      </div>
+      <a href="https://cisarchive.site/Library/" class="bar-item btn3 cb-h">المكتبة</a>
+      <a href="https://cisarchive.site/CalcGPA/" class="bar-item btn3 cb-h">حساب المعدل التراكمي</a>
+    </div>
+    
+    
+    <div class="top cb">
+      <div class="overlay" onclick="close2()"style="cursor:pointer" id="myOverlay2"></div>
+      <button class="btn3  size-xl hide-large hide-medium f-right " onclick="open2()">☰</button>
+    </div>
+    <!--End of Header content-->  
+    
+  </div>
+  
+
+
+<div class="top cb">
+  <div class="overlay" onclick="close2()"style="cursor:pointer" id="myOverlay2"></div>
+  <button class="btn3  size-xl hide-large hide-medium f-right " onclick="open2()">☰</button>
+</div>
+
+
+
+<!-- Page Content -->
+<div class="padding-L" id="m">
+
+
+  <!-- main Section -->
+
+
+<div class="amargin-lr padding-64" id="head">
+  <div class="tstm4 ">
+    <div class="card tstm3 ">
+      <div class="tstm2 ">
+        <h2 class="tstc">المكتبة</h2>
+        <p>هنا المكتبة</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="">
+  <div class="card" >
+
+    <h2 class=" tstc">فهرس المواقع ...</h2>
+
+    <input class="Input" type="text" id="filterInput" onkeyup="Filter1('LibTable','filterInput')" placeholder="ابحث عن وصف ..." title="Type in a name">
+
+    <table class="Table" id="LibTable">
+        
+      <tr class= "header">
+        <th style="width:10%;"><a style="cursor:pointer" onclick="sortTable()">#</a></th>
+        <th style="width:50%;"><a style="cursor:pointer" onclick="sortTable1()">الوصف</a></th> 
+        <th style="width:40%;">الرابط</th>
+      </tr>
+
+      <tr>
+        <td>000</td>
+        <td>Calculator & Math Helper</td>
+        <td><a class="link1" href="https://www.wolframalpha.com/" target="_blank">wolframalpha.com</a> </td>
+      </tr>
+
+      <tr>
+        <td>001</td>
+        <td>PDF Tools</td>
+        <td><a class="link1" href="https://www.ilovepdf.com/ar" target="_blank">ilovepdf.com</a> </td>
+      </tr>
+
+      <tr>
+        <td>002</td>
+        <td>Scholar Google</td>
+        <td><a class="link1" href="https://scholar.google.com/" target="_blank">scholar.google.com</a> </td>
+      </tr>
+
+      <tr>
+        <td>003</td>
+        <td>Paraphrasing Tool</td>
+        <td><a class="link1" href="https://quillbot.com/" target="_blank">quillbot.com</a> </td>
+      </tr>
+
+      <tr>
+        <td>004</td>
+        <td>C Language Compiler</td>
+        <td><a class="link1" href="https://www.programiz.com/c-programming/online-compiler/" target="_blank">programiz.com</a> </td>
+      </tr>
+
+      <tr>
+        <td>005</td>
+        <td>PDF to PNG</td>
+        <td><a class="link1" href="https://pdf2png.com" target="_blank">pdf2png.com</a> </td>
+      </tr>
+
+      <tr>
+        <td>006</td>
+        <td>Calculator & Math Helper</td>
+        <td><a class="link1" href="https://atozmath.com/" target="_blank">atozmath.com</a> </td>
+      </tr>
+
+      <tr>
+        <td>007</td>
+        <td>Calculator & Math Helper</td>
+        <td><a class="link1" href="https://www.emathhelp.net/" target="_blank">emathhelp.net</a> </td>
+      </tr>
+
+      <tr>
+        <td>008</td>
+        <td>Circuits Simulator</td>
+        <td><a class="link1" href="https://www.tinkercad.com/circuits" target="_blank">tinkercad.com</a></td>
+      </tr>
+
+      <tr>
+        <td>009</td>
+        <td>Calculator & Math Helper</td>
+        <td><a class="link1" href="https://www.geogebra.org/" target="_blank">geogebra.org</a> </td>
+      </tr>
+
+      <tr>
+        <td>010</td>
+        <td>Temporary Email</td>
+        <td><a class="link1" href="https://temp-mail.org/ar/" target="_blank">temp-mail.org</a> </td>
+      </tr>
+      
+      <tr>
+        <td>011</td>
+        <td>Text to HTML Converter</td>
+        <td><a class="link1" href="https://wordtohtml.net/" target="_blank">wordtohtml.net</a> </td>
+      </tr>
+  
+    </table>
+
+  </div>
+</div>
+
+
+ <!-- JS Codes -->
+
+ <script src="https://cisarchive.site/JS/pack.js" ></script>
+ <script>
+    function Filter1(idTable,idInput) {
+  var input, filter, table, tr, td1,td0, i, txtValue;
+  input = document.getElementById(idInput);
+  filter = input.value.toUpperCase();
+  table = document.getElementById(idTable);
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td0= tr[i].getElementsByTagName("td")[0];
+    td1 =  tr[i].getElementsByTagName("td")[1];
+    if (td1) {
+      txtValue = td1.textContent || td1.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }     
+    // if (td0) {
+    //   txtValue = td0.textContent || td0.innerText;
+    //   if (txtValue.toUpperCase().indexOf(filter) > -1) {
+    //     tr[i].style.display = "";
+    //   } else {
+    //     tr[i].style.display = "none";
+    //   }
+    // }  
+  }
+}
+
+var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("LibTable");
+  switching = true;
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[1];
+      y = rows[i + 1].getElementsByTagName("TD")[1];
+      //check if the two rows should switch place:
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        //if so, mark as a switch and break the loop:
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+
+function sortTable() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("LibTable");
+  switching = true;
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[0];
+      y = rows[i + 1].getElementsByTagName("TD")[0];
+      //check if the two rows should switch place:
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        //if so, mark as a switch and break the loop:
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+
+function sortTable1() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("LibTable");
+  switching = true;
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[1];
+      y = rows[i + 1].getElementsByTagName("TD")[1];
+      //check if the two rows should switch place:
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        //if so, mark as a switch and break the loop:
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+ </script>
+</body>
+</html>

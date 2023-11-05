@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Computer College Archieve</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://127.0.0.1:5500//CSS/p.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    
+    <style>
+
+      
+      /* Card for the Texting*/
+      
+      .card{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);background:#ffff;text-align: center;padding: 30px;}
+      .card2{box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.3);background:#ffff;margin-left:0.001px;text-align: center;padding: 20px;}
+      .amargin-lr{margin-left:auto;margin-right:auto}.amargin-lr{max-width:980px}
+
+      /* Making the content 2 columns*/
+      .column50 {float: right;width: 50%;padding: 15px;}
+      .column30 {float: right;width: 30%;padding: 2px;}
+      .column25 {float: right;width: 25%;padding: 2px;}
+      .column20 {float: right;width: 20%;padding: 2px;}
+
+      .scrollbar-black::-webkit-scrollbar-thumb { border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); /* <- Add this to fix.*/     background-color: #000;}
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0;}
+
+      /* Firefox */
+      input[type=number] { -moz-appearance: textfield;}
+      
+    </style>
+
+  </head>
+  <body>
+        <div>
+          <!--Start of Header content-->
+          <!-- Bar (Sidebar - hidden on small screens) -->
+          <div class="sidebar1 bar-block brdr-r animate-right" id="mySidebar">
+            <button  onclick="close1()" class="btn3 bar-item size-l cr-h tstr" >إغلاق &times;</button>
+            <a href="https://cisarchive.site" class="bar-item btn3  cb-h"><i class="fa fa-home"></i></a> 
+            <button class="btn3 block tstc cb-h" onclick=" AccF('Acc1')"> التخصصات <i class="fa fa-caret-down"></i></button>
+            <div id="Acc1"  class="hide  cb animate-opacity">
+              <a href="https://cisarchive.site/CIS/CE/" class="bar-item tstr btn3-1">هندسة الحاسب</a>
+              <a href="https://cisarchive.site/CIS/CS/" class="bar-item tstr btn3-2">علوم الحاسب</a>
+              <a href="https://cisarchive.site/CIS/IS/" class="bar-item tstr btn3-3">نظم المعلومات</a>
+            </div>
+            <a href="https://cisarchive.site/Library/" class="bar-item btn3 cb-h">المكتبة</a>
+            <a href="https://cisarchive.site/CalcGPA/" class="bar-item btn3 cb-h">حساب المعدل التراكمي</a>
+          </div>
+          
+          <!-- Start Page Content (only on med and large scr)-->
+          <div class="top cb">
+          <div class="overlay" onclick="close1()"style="cursor:pointer" id="myOverlay"></div>
+            <button class="btn3 size-xl hide-small f-right" onclick="open1()">☰</button>
+             <div class="container">
+            <h1 class="hide-small tstc">أرشيف كلية الحاسب ونظم المعلومات</h1></div>
+          </div>
+          
+          
+          <!-- Bar on small screens (Hidden on med and lar scr) -->
+          <div class="sidebar1 bar-block brdr-r animate-right size-l" style="width:100%;" id="mySidebar2">
+            <button onclick="close2()" class="btn3 bar-item size-l cr-h tstr" >إغلاق &times;</button>
+             <a href="https://cisarchive.site" class="bar-item btn3  cb-h"><i class="fa fa-home"></i></a> 
+            <button class="btn3 block tstc cb-h" onclick=" AccF('Acc2')"> التخصصات <i class="fa fa-caret-down"></i></button>
+            <div id="Acc2"  class="hide cb animate-opacity">
+              <a href="https://cisarchive.site/CIS/CE/" class="bar-item tstr btn3-1">هندسة الحاسب</a>
+              <a href="https://cisarchive.site/CIS/CS/" class="bar-item tstr btn3-2">علوم الحاسب</a>
+              <a href="https://cisarchive.site/CIS/IS/" class="bar-item tstr btn3-3">نظم المعلومات</a>
+            </div>
+            <a href="https://cisarchive.site/Library/" class="bar-item btn3 cb-h">المكتبة</a>
+            <a href="https://cisarchive.site/CalcGPA/" class="bar-item btn3 cb-h">حساب المعدل التراكمي</a>
+          </div>
+          
+          
+          <div class="top cb">
+            <div class="overlay" onclick="close2()"style="cursor:pointer" id="myOverlay2"></div>
+            <button class="btn3  size-xl hide-large hide-medium f-right " onclick="open2()">☰</button>
+          </div>
+          <!--End of Header content-->  
+          
+        </div>
+      
+      
+      <!-- Page Content -->
+      <div class="padding-L" id="main">
+      
+      
+
+  <div class="tstm padding-64" id="head">
+    <div class="tstm4 ">
+    <div class="card2 tstm3 ">
+      <div class="tstm2 ">
+        <h2 class="tstc">حساب المعدل التراكمي</h2>
+
+        <p  class="tstr">
+
+          <form  class="tstr"><div class="row">
+
+              <div class="column20">
+                <label >التخصص</label> 
+              </div>    
+
+              <div class="column30">
+                <select id="Major" style="width: 100%;" oninput="calcpoint(this.value)" onchange="calcpoint(this.value)" name="calcType">
+                    <option class="tstc" value="other">آخر</option>
+                    <option class="tstc" value="CE37">هندسة الحاسب الآلي</option>
+                    <option class="tstc" value="CS37">علوم الحاسب الآلي</option>
+                    <option class="tstc" value="IS37">نظم المعلومات</option>
+                </select>
+              </div>
+              
+          </div></form>
+
+          <div class="tstr row">
+
+            <div class="column20">
+              <label >عدد الساعات السابقة</label> 
+            </div>
+
+            <div class="column30">
+              <input style="width: 100%;" id="oldHour" oninput="insertTb(this.value)"  min=1 type="number" value=5 oninput="validity.valid||(value='');">
+              
+            </div>
+
+          </div>
+            
+
+
+          <form  class="tstr">
+
+            <div class="row">
+
+              <div class="column20">
+                <label >حساب المعدل عن طريق</label>
+              </div>
+
+              <div class="column30">
+                <input style="text-align: right; width: 50%;" id="howToCalc" min=0 class="tstr" type="number" step=".001" value="1" >
+                <select style="width: 49.2%;" id="calcType"  oninput="calcpoint(this.value)" onchange="calcpoint(this.value)" name="calcType">
+                    <option value="nu"></option>
+                    <option class="tstc" value="Points">عدد النقاط</option>
+                    <option class="tstc" value="GPA">المعدل التراكمي السابق</option>
+                </select>
+              </div>
+              
+              
+            </div>
+            
+          </form>
+            
+
+        </p>
+  
+  
+        <div id="tee">g</div>
+
+    <div class="row tstc">
+        <div class="card column50" >
+            <h4>الخطة الدراسية</h4>
+    
+            
+    
+        </div>
+        <div class="card column50" >
+            <h4>تشجير للخطة الدراسية</h4>
+    
+            
+        </div>
+  </div>
+
+  <div class="tstc tstm3">
+    <div class="card" >
+        <h4>المواد</h4>
+
+        <table class="Table" id="subj123">
+        
+          <tr class= "header">
+            <th style="width:50%;">اسم المادة</th>
+            <th style="width:10%;">عدد الساعات</th>
+            <th style="width:10%;">التقدير</th>
+            <th style="width:20%;">عدد النقاط</th>
+            <th></th>
+          </tr>
+    
+          <!-- <tr>
+            <td><input class="Input" type="text"></td>
+            <td><input id="hours1" style="width: 100%;" id="oldHours" min=1 type="number" value="3" oninput="validity.valid||(value='');"></td>
+            <td>  <select id="inputPounds"  oninput="calcpoint(this.value)" onchange="calcpoint(this.value)" name="degree">
+              <option value="nu"></option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="D+">D+</option>
+              <option value="D">D</option>
+              <option value="F">F</option>
+                </select></td>
+            <td><label class="subjectPoint"></label></td>
+            <td><input type="checkbox" checked="checked" onclick="chek(this)" class=""/></td>
+          </tr> -->
+
+          
+      
+        </table>
+
+        <!-- <button onclick="document.location='#plan'" class="btn1">انتقال</button> -->
+
+    </div>
+
+</div>
+
+<p>Kilograms: <span id="outputKilograms"></span></p>
+  <p>
+    <form>
+        
+  <select id="inputPounds"  oninput="calcpoint(this.value)" onchange="calcpoint(this.value)" name="degree">
+      <option value="nu"></option>
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="B+">B+</option>
+      <option value="B">B</option>
+      <option value="C+">C+</option>
+      <option value="C">C</option>
+      <option value="D+">D+</option>
+      <option value="D">D</option>
+      <option value="F">F</option>
+      
+        </select>
+        <label >هاي</label>
+    </form></p>
+
+   
+</div>
+
+</div>
+
+
+     </div>
+    </div>
+  </div>
+
+
+<div  id="plan">  </div>
+  <!-- الخطة الدراسية -->
+<div class="tstm4" >
+
+ <div class="card tstm3 tstm2" >
+     <h2   class=" tstc">الخطة الدراسية</h2>
+<img id="myimage" src="CE_Plan.png" width="100%" height="100%" alt="Plan">
+</div>
+</div>
+
+
+
+
+
+
+ <!-- JS Codes -->
+<script src="http://127.0.0.1:5500/JS/pack.js" ></script>
+<script>
+// document.getElementById("subj123").innerHTML="        <table class='Table' ><tr class= 'header'>  <th style='width:50%;'>اسم المادة</th>    <th style='width:10%;'>عدد الساعات</th>       <th id='stst' style='width:10%;''>التقدير</th>       <th style='width:20%;''>عدد النقاط</th>          <th></th>        </tr></table>"
+function insertTb(numOfTb){
+document.getElementById("tee").innerHTML=document.getElementById("tee").innerHTML;
+  document.getElementById("subj123").innerHTML="          <tr class= 'header'>            <th style='width:50%;'>اسم المادة</th>            <th style='width:10%;'>عدد الساعات</th>            <th style='width:10%;'>التقدير</th>            <th style='width:20%;'>عدد النقاط</th>            <th></th>          </tr>"+"<tr><td><input class='Input' type='text'></td><td><input id='hours1' style='width: 100%;' id='oldHours' min=1 type='number' value='3' oninput='validity.valid||(value='');'></td><td>  <select id='inputPounds'  oninput='calcpoint(this.value)' onchange='calcpoint(this.value)' name='degree'>  <option value='nu'></option>  <option value='A+'>A+</option>  <option value='A'>A</option>  <option value='B+'>B+</option>  <option value='B'>B</option>  <option value='C+'>C+</option>  <option value='C'>C</option>  <option value='D+'>D+</option>  <option value='D'>D</option>  <option value='F'>F</option>    </select></td><td><label class='subjectPoint'></label></td><td><input type='checkbox' checked='checked' onclick='chek(this)' class=''/></td></tr>".repeat(numOfTb) 
+  document.getElementById("tee").innerHTML=document.getElementById("tee").innerHTML+"1".repeat(numOfTb);
+}
+  
+
+
+    function calcpoint(valNum) {
+if (valNum=="A+"){
+  document.getElementById("outputKilograms").innerHTML=4;
+  document.getElementById("hours1").value=5;
+  
+  
+}
+else if (valNum=="A"){
+  document.getElementById("outputKilograms").innerHTML=3.75;
+}
+else if (valNum=="B+"){
+  document.getElementById("outputKilograms").innerHTML=3.5;
+}
+else if (valNum=="B"){
+  document.getElementById("outputKilograms").innerHTML=3;
+}
+else{
+  document.getElementById("outputKilograms").innerHTML="";
+}
+
+}
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Computer College Archieve</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Z:\UQU\CCARCHIEVE\sourcecode\CSS\pack.css"  type="text/css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    
+    <style>
+
+      html {scroll-behavior: smooth;}
+      
+      
+      
+      /* body {background-image:  linear-gradient(30deg, #fcfcfc 12%, transparent 12.5%, transparent 87%, #fcfcfc 87.5%, #fcfcfc), linear-gradient(150deg, #fcfcfc 12%, transparent 12.5%, transparent 87%, #fcfcfc 87.5%, #fcfcfc), linear-gradient(30deg, #fcfcfc 12%, transparent 12.5%, transparent 87%, #fcfcfc 87.5%, #fcfcfc), linear-gradient(150deg, #fcfcfc 12%, transparent 12.5%, transparent 87%, #fcfcfc 87.5%, #fcfcfc), linear-gradient(60deg, rgba(252,252,252,0.5) 25%, transparent 25.5%, transparent 75%, rgba(252,252,252,0.5) 75%, rgba(252,252,252,0.5)), linear-gradient(60deg, rgba(252,252,252,0.5) 25%, transparent 25.5%, transparent 75%, rgba(252,252,252,0.5) 75%, rgba(252,252,252,0.5));
+              background-size: 102px 178.5px;background-position: 0 0, 0 0, 51px 89.25px, 51px 89.25px, 0 0, 51px 89.25px;background-color: #797979;}  //Backround1*/ 
+      
+      /* body {background-color: #d4d4fb;opacity: 0.5;background-image:  linear-gradient(30deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(30deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff), linear-gradient(60deg, #ffffff77 25%, transparent 25.5%, transparent 75%, #ffffff77 75%, #ffffff77), linear-gradient(60deg, #ffffff77 25%, transparent 25.5%, transparent 75%, #ffffff77 75%, #ffffff77);
+              background-size: 80px 140px;background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;} *//*Backround2*/
+      
+      
+      /*Backround-ORG*/
+      body{
+        opacity:0.8;
+        background-image:
+        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1067%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(237%2c 238%2c 241%2c 1)'%3e%3c/rect%3e%3cpath d='M-80.32 5.65 a85.97 85.97 0 1 0 171.94 0 a85.97 85.97 0 1 0 -171.94 0z' fill='rgba(0%2c 0%2c 0%2c 0.24)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M146.676%2c293.145C200.872%2c290.961%2c254.954%2c271.82%2c282.343%2c225.003C309.975%2c177.772%2c305.752%2c117.941%2c276.071%2c71.97C248.663%2c29.521%2c197.188%2c16.156%2c146.676%2c14.882C93.141%2c13.532%2c36.265%2c21.34%2c5.46%2c65.145C-29.94%2c115.484%2c-41.757%2c184.441%2c-9.353%2c236.759C21.857%2c287.149%2c87.452%2c295.532%2c146.676%2c293.145' fill='rgba(0%2c 0%2c 0%2c 0.24)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-49.09 -25.57 a23.52 23.52 0 1 0 47.04 0 a23.52 23.52 0 1 0 -47.04 0z' fill='rgba(0%2c 0%2c 0%2c 0.24)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1239.31 14.02 a102.71 102.71 0 1 0 205.42 0 a102.71 102.71 0 1 0 -205.42 0z' fill='rgba(0%2c 0%2c 0%2c 0.24)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1437.842%2c232.366C1479.123%2c229.211%2c1510.126%2c199.377%2c1531.237%2c163.763C1552.897%2c127.222%2c1566.234%2c84.58%2c1548.261%2c46.092C1527.441%2c1.506%2c1487.045%2c-35.544%2c1437.842%2c-36.24C1387.691%2c-36.949%2c1346.492%2c-0.811%2c1321.881%2c42.892C1297.784%2c85.682%2c1290.31%2c138.334%2c1315.945%2c180.22C1340.671%2c220.621%2c1390.613%2c235.976%2c1437.842%2c232.366' fill='rgba(0%2c 0%2c 0%2c 0.24)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1391.359662638478 156.2533004680478L1492.0245958239848 107.15573202767108 1368.0457765706665-19.292883530400616z' fill='rgba(0%2c 0%2c 0%2c 0.24)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M160.01211287100384 585.2631687687096L139.53806317893904 418.51541529296753-6.735640604738251 605.7372184607744z' fill='rgba(0%2c 0%2c 0%2c 0.24)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M78.9521244059753 601.8677110907449L170.69715336634235 537.6271502194278 28.463797579183044 432.1298872145358z' fill='rgba(0%2c 0%2c 0%2c 0.24)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M39.79283675108648 595.9153902811394L160.8811208802702 446.6748510240019-4.566581625780742 417.5019571759576z' fill='rgba(0%2c 0%2c 0%2c 0.24)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1414.7317869935814 408.2897802893024L1303.0046133644812 416.1025053486445 1370.5872877680445 579.7869032626239z' fill='rgba(0%2c 0%2c 0%2c 0.24)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1344.5556289042013 588.5887267900873L1500.144223666726 475.7733896637287 1347.884515444569 404.77352169129125z' fill='rgba(0%2c 0%2c 0%2c 0.24)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1228.12 473.21 a125.09 125.09 0 1 0 250.18 0 a125.09 125.09 0 1 0 -250.18 0z' fill='rgba(0%2c 0%2c 0%2c 0.24)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1067'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+      }
+      
+          
+      
+      /* Fonts */
+      
+      body, h1,h2,h3,h4,h5,h6, p {font-family:'Lalezar', cursive}
+      .arf1 {font-family: 'Amiri', serif}
+      
+      
+      
+      /* For Texting */
+      
+      .tstr {text-align:right!important} /*make the text right ot center*/
+      .tstc {text-align:center!important}
+      
+        
+      .tstm {margin-top:100px;}
+      .tstm2 {margin-left:40px;margin-right:40px;}
+      .tstm4 {margin-top:100px;} /* Margin */
+      
+      
+      /*Bar Properties*/
+      
+      .brdr-r{border-right:1px solid #ccc!important}
+      .sidebar1{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto;display:none;right:0;z-index:5;}
+      .block{display:block;width:100%}
+      .bar-block  .btn3,.bar-block .btn3{width:100%;text-align:left;padding:8px 16px}
+      .bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+      .btn3{white-space:normal} 
+      .bar-block .bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+      .bar-block .bar-item{text-align:center}
+      /*.w3-card{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}*/
+      
+      /* Card for the Texting*/
+      
+      .card{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);background:#ffff;text-align: center;padding: 30px;}
+      .card2{box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.3);background:#ffff;margin-left:0.001px;text-align: center;padding: 20px;}
+      .amargin-lr{margin-left:auto;margin-right:auto}.amargin-lr{max-width:980px}
+      
+      /* Making the content 3 columns*/
+      .column {float: right;width: 33.33%;padding: 15px;}
+      
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;/* Clear floats after the columns */
+      }
+
+    /* Making the content 2 columns*/
+    .column2 {float: right;width: 50%;padding: 15px;}
+      
+      
+      .row2:after {
+        content: "";
+        display: table;
+        clear: both;/* Clear floats after the columns */
+      }
+      
+      
+      
+      /*Buttons Shape*/
+      
+          /*Button 1*/
+      .btn1{position:relative;border-radius:0.5rem;background:#d2386c;color:#ffff;transition:all 0.2s;border:black;padding:10px 10px;vertical-align:middle;overflow:hidden;text-align:center;cursor:pointer;white-space:nowrap;}
+      .btn1:hover{background:transparent;letter-spacing:5px;border-radius:0.2rem;color:#000!important;background-color:#eeee!important;transition:all 0.2s;}
+          /*Button 2*/
+      .btn2 {padding:5px 8px;font-size:18px;text-align:center;cursor:pointer;outline:none;background:whitesmoke;color:grey;border:none;border-radius: 15px;box-shadow:0 9px #999;transition:all 0.2s;}
+      .btn2:hover{background:#d2386c;color:#ffff;transition: all 0.2s;}
+      .btn2:active {background-color: #3e8e41;box-shadow: 0 5px #666;transform: translateY(4px);}
+          /*Button 3*/
+      .btn3{text-align: right;border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;cursor:pointer;white-space:nowrap}
+      .btn3{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+      .btn3:disabled{cursor:not-allowed;opacity:0.3}
+      .btn3:hover{color:#000!important;background-color:#fff!important}
+      
+      
+      /* Shapes for hiding text */
+      
+       .accordion {
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+        background:#ffff;
+        margin-bottom:0.1px;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: right;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+      .active, .accordion:hover {
+        background: #d2386c;
+        color:#ffff; 
+      }
+      .accordion:after {
+        content: '\002B';
+        float: left;
+        margin-left: 5px;
+      }
+      .active:after {
+        content: "\2212";
+      }
+      .panel {
+        padding: 2px 24px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+      
+      
+      /* Animations */
+      
+      .animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+      .animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+      .animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+      .animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+      .animate-right{position:relative;animation:animateright 0.3s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+      .animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+      .animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+      .animate-input{transition:width 0.4s ease-in-out}.w3-animate-input:focus{width:100%!important}
+      
+      /* Positions */ 
+      
+      .top,.bottom{position:fixed;width:100%;z-index:1}.top{top:0}.bottom{bottom:0}
+      
+      
+      
+      /* Sizes */
+      
+      .size-xs{font-size:10px!important}.size-s{font-size:12px!important}.size-m{font-size:15px!important}.size-l{font-size:18px!important}
+      .size-xl{font-size:24px!important}.size-xxl{font-size:36px!important}.size-xxxl{font-size:48px!important}.size-j{font-size:64px!important}
+      
+      
+      /*For moving the words in the Home Page*/
+      
+      .ml4 {
+              position: relative;
+             font-weight: 800;
+             font-size: 2.5em; }
+      .ml4 .letters {
+              position: absolute;
+              margin: auto;
+              left: 0;
+              right: 0;
+              opacity: 0;  }
+      
+      /*Padding Whole page */
+      
+      .padding-L{padding:12px 24px!important}
+      .padding-64{padding-top:64px!important;padding-bottom:64px!important}
+      
+      /* Container and overlay*/
+      
+      .container:after,.container:before,.bar:before,.bar:after{content:"";/*display:table;*/clear:both}
+      .container{padding:0.5em 15px}
+      .overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+      
+      /*Some hiden properties */
+      
+      .hide{display:none!important}
+      @media (max-width:650px){.modal-content{margin:0 10px;width:auto!important}.modal{padding-top:30px}
+      .hide-small{display:none!important}.mobile{display:block;width:100%!important}.bar-item{text-align:center}.btn3{width:100%}}
+      @media (max-width:992px) and (min-width:651px){.hide-medium{display:none!important}}
+      @media (max-width:992px){.sidebar1.collapse{display:none}.main{margin-left:0!important;margin-right:0!important}.auto{max-width:100%}}
+      @media (min-width:993px){.hide-large{display:none!important}.sidebar1.collapse{display:block!important}}
+      .show-block,.show{display:block!important}.show-inline-block{display:inline-block!important}
+      
+      #main {margin:0px}
+      
+      
+      /* Remove margins from "page content" on small screens */
+      
+      @media only screen and (max-width: 650px) {#main {margin: 30px} .tstm3 {margin-top:200px;} .tstm{margin-top:20px;} .column{width: 100%;}}
+      
+      
+       /* Important */
+      html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+      html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+      article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+      audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+      audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+      a{background-color:transparent}a:active,a:hover{outline-width:0}
+      abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+      b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+      small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+      sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+      code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+      button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+      button,input{overflow:visible}button,select{text-transform:none}
+      button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+      button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+      button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+      fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+      legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+      [type=checkbox],[type=radio]{padding:0}
+      [type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+      [type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+      [type=search]::-webkit-search-decoration{-webkit-appearance:none}
+      ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+      
+      
+      *{box-sizing: border-box;}
+      /* End extract */
+      
+      
+      
+      
+      .f-left{float:left!important}.f-right{float:right!important}
+      
+      /*Colors*/
+      
+      .cr,.cr-h:hover{color:#fff!important;background-color:#f44336!important}
+      .cb,.cb-h:hover{color:#fff!important;background-color:#000!important}
+      .cw,.cw-h:hover{color:#000!important;background-color:#fff!important}
+      .cpink,.cpink-h:hover{color:#fff!important;background-color:#d2386c!important}
+      
+      
+      </style>
+        </head>
+      <body>
+<div>
+  <!--Start of Header content-->
+  <!-- Bar (Sidebar - hidden on small screens) -->
+  <div class="sidebar1 bar-block brdr-r animate-right" id="mySidebar">
+    <button  onclick="close1()" class="btn3 bar-item size-l cr-h tstr" >إغلاق &times;</button>
+    <a href="https://cisarchive.site" class="bar-item btn3  cb-h"><i class="fa fa-home"></i></a> 
+    <button class="btn3 block tstc cb-h" onclick=" AccF('Acc1')"> التخصصات <i class="fa fa-caret-down"></i></button>
+    <div id="Acc1"  class="hide  cb animate-opacity">
+      <a href="https://cisarchive.site/CIS/CE/" class="bar-item tstr btn3">هندسة الحاسب</a>
+      <a href="https://cisarchive.site/CIS/CS/" class="bar-item tstr btn3">علوم الحاسب</a>
+      <a href="https://cisarchive.site/CIS/IS/" class="bar-item tstr btn3">نظم المعلومات</a>
+    </div>
+    <a href="https://cisarchive.site/Library/" class="bar-item btn3 cb-h">المكتبة</a>
+    <a href="https://cisarchive.site/CalcGPA/" class="bar-item btn3 cb-h">حساب المعدل التراكمي</a>
+  </div>
+  
+  <!-- Start Page Content (only on med and large scr)-->
+  <div class="top cb">
+  <div class="overlay" onclick="close1()"style="cursor:pointer" id="myOverlay"></div>
+    <button class="btn3 size-xl hide-small f-right" onclick="open1()">☰</button>
+     <div class="container">
+    <h1 class="hide-small tstc">أرشيف كلية الحاسب ونظم المعلومات</h1></div>
+  </div>
+  
+  
+  <!-- Bar on small screens (Hidden on med and lar scr) -->
+  <div class="sidebar1 bar-block brdr-r animate-right size-l" style="width:100%;" id="mySidebar2">
+    <button onclick="close2()" class="btn3 bar-item size-l cr-h tstr" >إغلاق &times;</button>
+     <a href="https://cisarchive.site" class="bar-item btn3  cb-h"><i class="fa fa-home"></i></a> 
+    <button class="btn3 block tstc cb-h" onclick=" AccF('Acc2')"> التخصصات <i class="fa fa-caret-down"></i></button>
+    <div id="Acc2"  class="hide  cb animate-opacity">
+      <a href="https://cisarchive.site/CIS/CE/" class="bar-item tstr btn3">هندسة الحاسب</a>
+      <a href="https://cisarchive.site/CIS/CS/" class="bar-item tstr btn3">علوم الحاسب</a>
+      <a href="https://cisarchive.site/CIS/IS/" class="bar-item tstr btn3">نظم المعلومات</a>
+    </div>
+    <a href="https://cisarchive.site/Library/" class="bar-item btn3 cb-h">المكتبة</a>
+    <a href="https://cisarchive.site/CalcGPA/" class="bar-item btn3 cb-h">حساب المعدل التراكمي</a>
+  </div>
+  
+  
+  <div class="top cb">
+    <div class="overlay" onclick="close2()"style="cursor:pointer" id="myOverlay2"></div>
+    <button class="btn3  size-xl hide-large hide-medium f-right " onclick="open2()">☰</button>
+  </div>
+  <!--End of Header content-->  
+  
+</div>
+      
+      
+      
+      <!-- Page Content -->
+      <div class="padding-L" id="main">
+      
+      
+
+  <div class="tstm padding-64" id="head">
+    <div class="tstm4 ">
+    <div class="card2 tstm3 ">
+      <div class="tstm2 ">
+  <h2 class="tstc">حساب المعدل التراكمي</h2>
+  <p>
+    <form class="tstr">
+        
+  <select id="inputPounds"  oninput="calcpoint(this.value)" onchange="calcpoint(this.value)" name="degree">
+      <option value="nu"></option>
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="B+">B+</option>
+      <option value="B">B</option>
+      <option value="C+">C+</option>
+      <option value="C">C</option>
+      <option value="D+">D+</option>
+      <option value="D">D</option>
+      <option value="F">F</option>
+      
+        </select>
+        <label >هاي</label>
+    </form></p>
+  
+  
+
+
+    <div class="row2 tstc">
+        <div class="card column2" >
+            <h4>الخطة الدراسية</h4>
+    
+            <button onclick="document.location='#plan'" class="btn1">انتقال</button>
+    
+        </div>
+        <div class="card column2" >
+            <h4>تشجير للخطة الدراسية</h4>
+    
+            <button onclick="document.location=''" class="btn1">انتقال</button>
+        </div>
+  </div>
+
+  <div class="tstc tstm3">
+    <div class="card" >
+        <h4>الخطة الدراسية</h4>
+
+        <button onclick="document.location='#plan'" class="btn1">انتقال</button>
+
+    </div>
+
+</div>
+
+<p>Kilograms: <span id="outputKilograms"></span></p>
+  <p>
+    <form>
+        
+  <select id="inputPounds"  oninput="calcpoint(this.value)" onchange="calcpoint(this.value)" name="degree">
+      <option value="nu"></option>
+      <option value="A+">A+</option>
+      <option value="A">A</option>
+      <option value="B+">B+</option>
+      <option value="B">B</option>
+      <option value="C+">C+</option>
+      <option value="C">C</option>
+      <option value="D+">D+</option>
+      <option value="D">D</option>
+      <option value="F">F</option>
+      
+        </select>
+        <label >هاي</label>
+    </form></p>
+</div>
+
+</div>
+
+
+     </div>
+    </div>
+  </div>
+
+
+<div  id="plan">  </div>
+  <!-- الخطة الدراسية -->
+<div class="tstm4" >
+
+ <div class="card tstm3 tstm2" >
+     <h2   class=" tstc">الخطة الدراسية</h2>
+<img id="myimage" src="CE_Plan.png" width="100%" height="100%" alt="Plan">
+</div>
+</div>
+
+
+
+
+
+
+ <!-- JS Codes -->
+<script src="https://cisarchive.site/JS/pack.js" ></script>
+<script>
+    function calcpoint(valNum) {
+if (valNum=="A+"){
+  document.getElementById("outputKilograms").innerHTML=4;
+}
+else if (valNum=="A"){
+  document.getElementById("outputKilograms").innerHTML=3.75;
+}
+else if (valNum=="B+"){
+  document.getElementById("outputKilograms").innerHTML=3.5;
+}
+else if (valNum=="B"){
+  document.getElementById("outputKilograms").innerHTML=3;
+}
+else{
+  document.getElementById("outputKilograms").innerHTML="";
+}
+}
+</script>
+
+
+
+</body>
+</html>

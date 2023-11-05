@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>أرشيف كلية الحاسب</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cisarchive.site/CSS/p.css">
+    <link rel="stylesheet" href="http://192.168.8.8:5500/CSS/p.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+   
+    <link rel="icon" type="image/x-icon" href="https://cisarchive.site/Images/cis.ico">
+
+    <style>
+      </style>
+  </head>
+    
+  <body>
+    <div>
+      <!--Start of Header content-->
+      <!-- Bar (Sidebar - hidden on small screens) -->
+      <div class="sidebar1 bar-block brdr-r animate-right" id="mySidebar">
+        <button  onclick="close1()" class="btn3 bar-item size-l cr-h tstr" >إغلاق &times;</button>
+        <a href="https://cisarchive.site" class="bar-item btn3  cb-h"><i class="fa fa-home"></i></a> 
+        <button class="btn3 block tstc cb-h" onclick=" AccF('Acc1')"> التخصصات <i class="fa fa-caret-down"></i></button>
+        <div id="Acc1"  class="hide  cb animate-opacity">
+          <a href="https://cisarchive.site/CIS/CE/" class="bar-item tstr btn3-1">هندسة الحاسب</a>
+          <a href="https://cisarchive.site/CIS/CS/" class="bar-item tstr btn3-2">علوم الحاسب</a>
+          <a href="https://cisarchive.site/CIS/IS/" class="bar-item tstr btn3-3">نظم المعلومات</a>
+        </div>
+        <a href="https://cisarchive.site/Library/" class="bar-item btn3 cb-h">المكتبة</a>
+        <a href="https://cisarchive.site/CalcGPA/" class="bar-item btn3 cb-h">حساب المعدل التراكمي</a>
+      </div>
+      
+      <!-- Start Page Content (only on med and large scr)-->
+      <div class="top cb">
+      <div class="overlay" onclick="close1()"style="cursor:pointer" id="myOverlay"></div>
+        <button class="btn3 size-xl hide-small f-right" onclick="open1()">☰</button>
+         <div class="container">
+        <h1 class="hide-small tstc">أرشيف كلية الحاسب ونظم المعلومات</h1></div>
+      </div>
+      
+      
+      <!-- Bar on small screens (Hidden on med and lar scr) -->
+      <div class="sidebar1 bar-block brdr-r animate-right size-l" style="width:100%;" id="mySidebar2">
+        <button onclick="close2()" class="btn3 bar-item size-l cr-h tstr" >إغلاق &times;</button>
+         <a href="https://cisarchive.site" class="bar-item btn3  cb-h"><i class="fa fa-home"></i></a> 
+        <button class="btn3 block tstc cb-h" onclick=" AccF('Acc2')"> التخصصات <i class="fa fa-caret-down"></i></button>
+        <div id="Acc2"  class="hide cb animate-opacity">
+          <a href="https://cisarchive.site/CIS/CE/" class="bar-item tstr btn3-1">هندسة الحاسب</a>
+          <a href="https://cisarchive.site/CIS/CS/" class="bar-item tstr btn3-2">علوم الحاسب</a>
+          <a href="https://cisarchive.site/CIS/IS/" class="bar-item tstr btn3-3">نظم المعلومات</a>
+        </div>
+        <a href="https://cisarchive.site/Library/" class="bar-item btn3 cb-h">المكتبة</a>
+        <a href="https://cisarchive.site/CalcGPA/" class="bar-item btn3 cb-h">حساب المعدل التراكمي</a>
+      </div>
+      
+      
+      <div class="top cb">
+        <div class="overlay" onclick="close2()"style="cursor:pointer" id="myOverlay2"></div>
+        <button class="btn3  size-xl hide-large hide-medium f-right " onclick="open2()">☰</button>
+      </div>
+      <!--End of Header content-->  
+      
+    </div>
+    
+      
+      
+      
+      <!-- Page Content -->
+      <div class="padding-L" id="main">
+      
+      
+
+  <div class="tstm padding-64" id="head">
+    <div class="tstm4 ">
+    <div class="card tstm3 ">
+      <div class="tstm2 ">
+  <h2 class="tstc">علوم الحاسب الآلي</h2>
+
+<p> تعريف للتخصص تعريف للتخصص تعريف للتخصص تعريف للتخصص تعريف للتخصص </p>
+<div class="row tstc">
+  <div class="card2 column" >
+    <h4>الخطة الدراسية</h4>
+    
+    <button onclick="document.location='#plan'" class="btn4-2">انتقال</button>
+    
+  </div>
+  <div class="card2 column" >
+    <h4>تشجير للخطة الدراسية</h4>
+    
+    <button onclick="document.location='#tree'" class="btn4-2">انتقال</button>
+  </div>
+  <div class="card2 column">
+    <h4>المواد 
+      ومحتوياتها</h4>
+      <button onclick="document.location='#subj'" class="btn4-2">انتقال</button>
+   
+   </div>
+  </div>
+</div>
+
+</div>
+
+
+     </div>
+    </div>
+  </div>
+
+
+<div  id="plan">  </div>
+  <!-- الخطة الدراسية -->
+<div class="tstm4" >
+
+ <div class="card tstm3 tstm2" >
+     <h2   class=" tstc">الخطة الدراسية</h2>
+<img id="myimage" src="CS_Plan.png" width="100%" height="100%" alt="CS Plan">
+</div>
+</div>
+
+
+<div  id="tree">  </div>
+<!-- تشجير للخطة الدراسية -->
+<div class="tstm4" >
+  <div class="card tstm3 tstm2" >
+    <h2   class=" tstc">تشجير للخطة الدراسية</h2>
+    <img id="myimage2" src="CS_Tree.png" width="100%" height="100%" alt="CS Tree">
+  </div>
+</div>
+
+<div  id="subj">  </div>
+<!-- المواد ومحتوياتها -->
+<div class="tstm4" style="margin-bottom:12px;">
+
+ <div class="card tstm3 tstm2" >
+     <h2   class=" tstc">المواد ومحتوياتها</h2>
+
+<button class="accordion-2">المستوى 1 و 2 (السنة التحضيرية)</button>
+
+<div class="panel">
+
+  <div class="margin-30 hide-small hide-medium">
+    <p><a href="https://cisarchive.site/CIS/Subjects/PreparatoryYear/Calculus1.html" class="marginl-10 btn2-2">تفاضل وتكامل 1</a>
+      <a href="https://cisarchive.site/CIS/Subjects/PreparatoryYear/GeneralChemistry.html" class="marginl-10 btn2-2">كيمياء عامة 1</a>
+      <a href="https://cisarchive.site/CIS/Subjects/PreparatoryYear/ComputerProgSkills.html" class="marginl-10 btn2-2">مهارات برمجة الحاسب الآلي</a>
+      <a href="https://cisarchive.site/CIS/Subjects/PreparatoryYear/EngLang1.html" class="marginl-10 btn2-2">اللغة الانجليزية 1</a>
+    </p>
+
+    <p class="margint-30">
+      <a href="https://cisarchive.site/CIS/Subjects/PreparatoryYear/Calculus2.html" class="marginl-10 btn2-2">تفاضل وتكامل 2</a>
+      <a href="https://cisarchive.site/CIS/Subjects/PreparatoryYear/GeneralPhysics1.html" class="marginl-10 btn2-2">فيزياء عامة 1</a>
+      <a href="https://cisarchive.site/CIS/Subjects/PreparatoryYear/LearningSkills.html" class="marginl-10 btn2-2">مهارات التعلم</a>
+      <a href="https://cisarchive.site/CIS/Subjects/PreparatoryYear/TechnicalEng.html" class="marginl-10 btn2-2">اللغة الانجليزية التقنية</a>
+    </p>
+    
+  </div>
+
+  <div class="margin-30 hide-large ">
+    <p><a href="https://cisarchive.site/CIS/Subjects/PreparatoryYear/Calculus1.html" class="btn2-2">تفاضل وتكامل 1</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/PreparatoryYear/GeneralChemistry.html" class="btn2-2">كيمياء عامة 1</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/PreparatoryYear/ComputerProgSkills.html" class="btn2-2">مهارات برمجة الحاسب الآلي</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/PreparatoryYear/EngLang1.html" class="btn2-2">اللغة الانجليزية 1</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/PreparatoryYear/Calculus2.html" class="btn2-2">تفاضل وتكامل 2</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/PreparatoryYear/GeneralPhysics1.html" class="btn2-2">فيزياء عامة 1</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/PreparatoryYear/LearningSkills.html" class="btn2-2">مهارات التعلم</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/PreparatoryYear/TechnicalEng.html" class="btn2-2">اللغة الانجليزية التقنية</a></p>
+  </div>
+
+</div>
+
+<button class="accordion-2">المستوى 3</button>
+
+<div class="panel">
+
+  <div class="margin-30 hide-small hide-medium">
+    <p>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L3/ComputerProg.html" class="marginl-10 btn2-2">برمجة الحاسب</a>
+      <a href="https://cisarchive.site/CIS/Subjects/CE/L4/DLD.html" class="marginl-10 btn2-2">التصمیم الرقمي المنطقي</a>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L3/DiscreteStructures1.html" class="marginl-10 btn2-2">ھیاكل متقطعة (1)</a>
+      <a href="https://cisarchive.site/CIS/Subjects/ElementsofStatis&Prob.html" class="marginl-10 btn2-2">مبادئ الاحصاء والاحتمالات</a>
+    </p>
+    
+  </div>
+
+  <div class="margin-30 hide-large ">
+    <p><a href="https://cisarchive.site/CIS/Subjects/CS/L3/ComputerProg.html" class="btn2-2">برمجة الحاسب</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/CE/L4/DLD.html" class="btn2-2">التصمیم الرقمي المنطقي</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/CS/L3/DiscreteStructures1.html" class="btn2-2">ھیاكل متقطعة (1)</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/ElementsofStatis&Prob.html" class="btn2-2">مبادئ الاحصاء والاحتمالات</a></p>
+  </div>
+
+</div>
+
+<button class="accordion-2">المستوى 4</button>
+
+<div class="panel">
+
+  <div class="margin-30 hide-small hide-medium">
+    <p>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L4/OOP.html" class="marginl-10 btn2-2">برمجة كائنیة التوجه</a>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L4/DiscreteStructures2.html" class="marginl-10 btn2-2">ھیاكل متقطعة (2)</a>
+      <a href="https://cisarchive.site/CIS/Subjects/CE/L6/ComputerOrgan&Arch.html" class="marginl-10 btn2-2">تنظیم وعمارة الحاسب	</a>
+      <a href="https://cisarchive.site/CIS/Subjects/LinearAlgebra1.html" class="marginl-10 btn2-2">الجبر الخطي (1)</a>
+    </p>
+    
+  </div>
+
+  <div class="margin-30 hide-large ">
+    <p><a href="https://cisarchive.site/CIS/Subjects/CS/L4/OOP.html" class="btn2-2">برمجة كائنیة التوجه</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/CS/L4/DiscreteStructures2.html" class="btn2-2">ھیاكل متقطعة (2)</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/CE/L6/ComputerOrgan&Arch.html" class="btn2-2">تنظیم وعمارة الحاسب</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/LinearAlgebra1.html" class="btn2-2">الجبر الخطي (1)</a></p>
+  </div>
+
+</div>
+
+<button class="accordion-2">المستوى 5</button>
+
+<div class="panel">
+
+  <div class="margin-30 hide-small hide-medium">
+    <p>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L5/OperatingSystems.html" class="marginl-10 btn2-2">نظم التشغیل</a>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L5/Database1.html" class="marginl-10 btn2-2">قواعد البيانات (1)</a>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L5/DataStructures.html" class="marginl-10 btn2-2">هياكل البيانات</a>
+    </p>
+
+    <p class="margint-30">
+      <a href="https://cisarchive.site/CIS/Subjects/CE/L5/NumMethods.html" class="marginl-10 btn2-2">الطرق العددية للحساب</a>
+      <a href="https://cisarchive.site/CIS/Subjects/IslamicCulture1.html" class="marginl-10 btn2-2">الثقافة الإسلامية (1)</a>
+        </p>
+    
+  </div>
+
+  <div class="margin-30 hide-large ">
+    <p><a href="https://cisarchive.site/CIS/Subjects/CS/L5/OperatingSystems.html" class="btn2-2">نظم التشغیل</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/CS/L5/Database1.html" class="btn2-2">قواعد البيانات (1)</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/CS/L5/DataStructures.html" class="btn2-2">هياكل البيانات</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/CE/L5/NumMethods.html" class="btn2-2">الطرق العددية للحساب</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/IslamicCulture1.html" class="btn2-2">الثقافة الإسلامية (1)</a></p>
+  </div>
+
+</div>
+
+<button class="accordion-2">المستوى 6</button>
+
+<div class="panel">
+
+  <div class="margin-30 hide-small hide-medium">
+    <p>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L6/CompilersConstr.html" class="marginl-10 btn2-2">تركيب المترجمات</a>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L6/Algorithms.html" class="marginl-10 btn2-2">خوارزميات</a>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L6/ComputerGraphics.html" class="marginl-10 btn2-2">الرسومات بالحاسب</a>
+      <a href="https://cisarchive.site/CIS/Subjects/CE/L8/ComputerNetworks.html" class="marginl-10 btn2-2">شبكات الحاسب الآلي</a>
+    </p>
+    
+  </div>
+
+  <div class="margin-30 hide-large ">
+    <p><a href="https://cisarchive.site/CIS/Subjects/CS/L6/CompilersConstr.html" class="btn2-2">تركيب المترجمات</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/CS/L6/Algorithms.html" class="btn2-2">خوارزميات</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/CS/L6/ComputerGraphics.html" class="btn2-2">الرسومات بالحاسب</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/CE/L8/ComputerNetworks.html" class="btn2-2">شبكات الحاسب الآلي</a></p>
+  </div>
+
+</div>
+
+<button class="accordion-2">المستوى 7</button>
+
+<div class="panel">
+
+  <div class="margin-30 hide-small hide-medium">
+    <p>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L7/AdvancedProgrm.html" class="marginl-10 btn2-2">برمجة متقدمة</a>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L7/InternetApps.html" class="marginl-10 btn2-2">تطبيقات الإنترنت</a>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L7/SoftwareEngineering1.html" class="marginl-10 btn2-2">هندسة البرمجيات (1)</a>
+    </p>
+
+    <p class="margint-30">
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L7/ArtificialIntelligence.html" class="marginl-10 btn2-2">الذكاء الاصطناعي</a>
+      <a href="https://cisarchive.site/CIS/Subjects/IslamicCulture2.html" class="marginl-10 btn2-2">الثقافه الاسلامیه (2)</a>
+    </p>
+    
+  </div>
+
+  <div class="margin-30 hide-large ">
+    <p><a href="https://cisarchive.site/CIS/Subjects/CS/L7/AdvancedProgrm.html" class="btn2-2">برمجة متقدمة</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/CS/L7/InternetApps.html" class="btn2-2">تطبيقات الإنترنت</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/CS/L7/SoftwareEngineering1.html" class="btn2-2">هندسة البرمجيات (1)</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/CS/L7/ArtificialIntelligence.html" class="btn2-2">الذكاء الاصطناعي</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/IslamicCulture2.html" class="btn2-2">الثقافه الاسلامیه (2)</a></p>
+  </div>
+
+</div>
+
+<button class="accordion-2">المستوى 8</button>
+
+<div class="panel">
+
+  <div class="margin-30 hide-small hide-medium">
+    <p>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L8/ParallelComputing.html" class="marginl-10 btn2-2">الحوسبة المتوازية</a>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L8/SoftwareEngineering2.html" class="marginl-10 btn2-2">هندسة البرمجيات (2)</a>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L8/ComputerSecurity.html" class="marginl-10 btn2-2">أمن الحاسب</a>
+    </p>
+
+    <p class="margint-30">
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L8/UIDesign.html" class="marginl-10 btn2-2">تصمیم واجهات المستخدم</a>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L8/SummerTraining.html" class="marginl-10 btn2-2">التدريب الصيفي</a>
+    </p>
+    
+  </div>
+
+  <div class="margin-30 hide-large ">
+    <p><a href="https://cisarchive.site/CIS/Subjects/CS/L8/ParallelComputing.html" class="btn2-2">الحوسبة المتوازية</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/CS/L8/SoftwareEngineering8.html" class="btn2-2">هندسة البرمجيات (2)</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/CS/L8/ComputerSecurity.html" class="btn2-2">أمن الحاسب</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/CS/L8/UIDesign.html" class="btn2-2">تصمیم واجهات المستخدم</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/CS/L8/SummerTraining.html" class="btn2-2">التدريب الصيفي</a></p>
+  </div>
+
+</div>
+
+<button class="accordion-2">المستوى 9</button>
+
+<div class="panel">
+
+  <div class="margin-30 hide-small hide-medium">
+    <p>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L9/Computers&society.html" class="marginl-10 btn2-2">الحاسب والمجتمع</a>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L9/GradProject1.html" class="marginl-10 btn2-2">مشروع التخرج (1)</a>
+      <a href="https://cisarchive.site/CIS/Subjects/IslamicCulture3.html" class="marginl-10 btn2-2">الثقافة الاسلامیة (3)	</a>
+    </p>
+    
+  </div>
+
+  <div class="margin-30 hide-large ">
+    <p><a href="https://cisarchive.site/CIS/Subjects/CS/L9/Computers&society.html" class="btn2-2">الحاسب والمجتمع</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/CS/L9/GradProject1.html" class="btn2-2">مشروع التخرج (1)</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/IslamicCulture3.html" class="btn2-2">الثقافة الاسلامیة (3)</a></p>
+  </div>
+
+</div>
+
+<button class="accordion-2">المستوى 10</button>
+
+<div class="panel">
+
+  <div class="margin-30 hide-small hide-medium">
+    <p>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/L10/GradProject2.html" class="marginl-10 btn2-2">مشروع التخرج (2)</a>
+      <a href="https://cisarchive.site/CIS/Subjects/IslamicCulture4.html" class="marginl-10 btn2-2">الثقافة الاسلامیة (4)</a>
+      <a href="https://cisarchive.site/CIS/Subjects/BioofProphet.html" class="marginl-10 btn2-2">السیرة النبوية</a>
+      <a href="https://cisarchive.site/CIS/Subjects/ArLang.html" class="marginl-10 btn2-2">اللغة العربیة (1)</a>
+    </p>
+    
+  </div>
+
+  <div class="margin-30 hide-large ">
+    <p><a href="https://cisarchive.site/CIS/Subjects/CS/L10/GradProject2.html" class="btn2-2">مشروع التخرج (2)</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/IslamicCulture4.html" class="btn2-2">الثقافة الاسلامیة (4)</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/BioofProphet.html" class="btn2-2">السیرة النبوية</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/ArLang.html" class="btn2-2">اللغة العربیة (1)</a></p>
+  </div>
+
+</div>
+
+<button class="accordion-2">المواد الاختيارية</button>
+
+<div class="panel">
+
+  <div class="margin-30 hide-small hide-medium">
+    <p>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/ElectiveCourses/" class="marginl-10 btn2-2">sub</a>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/ElectiveCourses/" class="marginl-10 btn2-2">sub</a>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/ElectiveCourses/" class="marginl-10 btn2-2">sub</a>
+    </p>
+
+    <p class="margint-30">
+      <a href="https://cisarchive.site/CIS/Subjects/CS/ElectiveCourses/" class="marginl-10 btn2-2">sub</a>
+      <a href="https://cisarchive.site/CIS/Subjects/CS/ElectiveCourses/" class="marginl-10 btn2-2">sub</a>
+    </p>
+    
+  </div>
+
+  <div class="margin-30 hide-large ">
+    <p><a href="https://cisarchive.site/CIS/Subjects/CS/ElectiveCourses/" class="btn2-2">sub</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/CS/ElectiveCourses/" class="btn2-2">sub</a></p>
+    <p class="margint-30"><a href="https://cisarchive.site/CIS/Subjects/CS/ElectiveCourses/" class="btn2-2">sub</a></p>
+  </div>
+
+</div>
+
+</div>
+</div>
+
+
+
+ <!-- JS Codes -->
+ <script>
+  var acc = document.getElementsByClassName("accordion-2");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", 
+  function() {
+    this.classList.toggle("active-2");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+  );
+}
+
+</script>
+<script src="https://cisarchive.site/JS/pack.js" ></script>
+
+
+
+
+</body>
+</html>
